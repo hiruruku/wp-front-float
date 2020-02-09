@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+ 
+html {
+    font-size: 62.5%;
+}
+body {
+    color: #333;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+a:link, a:visited, a:hover, a:active {
+    color: indianred;
+    text-decoration: none;
+  }
+
+/* header部分　*/
+.header {
+    width: 100%;
+    padding: 28px 0 15px;
+    background: url('../images/bg-gray.png') repeat;
+    box-shadow: 0 0 9px 2px #eeeeeae8;
+}
+.wrapper {
+    width: 970px;
+    margin: 30px auto 40px;
+}
+/*.mainをblock指定するのは、IEや古いAndroid対策*/
+.main {
+    display: block;
+    float: left;
+    width: 660px;
+}
+
+.sidemenu {
+    float: right;
+    width: 275px;
+}
+.clearfix::after {
+    content: '';
+    display:block;
+    clear: both;
+}
+
+.footer{
+    width: 100%;
+}
+/*　ロゴ */
+
+.logo {
+    width: 225px;
+    height: 63px;
+    margin: 0 auto;
+    background: url('../images/sitelogo.png') no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation */
+.glob-nav {
+    width: 100%;
+    height: 50px;
+    margin-top: 16px;
+    padding: 15px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.glob-nav .nav-item {
+    display: inline-block;
+    margin: 0 10px;
+    list-style-type: none;
+}
+
+.glob-nav .nav-item a {
+    display: inline-block;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    text-align: middle;
+    border-radius: 8px;
+    color: rgb(77, 84, 95);
+    font-size: 1.3rem;
+    letter-spacing: 1.1px;
+    transition: 0.2s;
+}
+
+.glob-nav .nav-item.active a,
+.glob-nav .nav-item a:hover {
+  background-color: indianred;
+  color: #fff;
+}
