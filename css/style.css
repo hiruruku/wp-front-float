@@ -25,10 +25,19 @@ a:active {
   color: indianred;
   text-decoration: none;
 }
-
+/**-----------------
+* パーツ使用
+* ------------------ */
 .hidden {
     display: none;
 }
+.heading {
+    padding: 10px 12px;
+    background: url('../images/bg-gray.gif');
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
 
 /** ----------------------------------
 *  骨格部分
@@ -90,7 +99,7 @@ a:active {
   margin-top: 16px;
   padding: 12px;
   text-align: center;
-  background-color: aliceblue;
+  background-color: #fff;
 }
 
 .glob-nav .nav-item {
@@ -118,8 +127,9 @@ a:active {
   color: aliceblue;
 }
 /** ----------------------
-* main部
+* main
 * ----------------------- */
+/* PROFILE Section */
 .a-profile {
   display: block;
   height: 300px;
@@ -167,4 +177,52 @@ a:active {
 
 .a-profile:hover {
   opacity: 0.83;
+}
+/* Latest Post Section */
+.scroll-list {
+    max-height: 225px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+.scroll-list .scroll-item a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 0;
+    transition: background-color 0.1s;
+}
+.scroll-list .scroll-item:nth-of-type(even) a {
+    background: url('../images/bg-gray-2.gif');
+}
+.scroll-list .scroll-item a:hover {
+    background-color: #fafaf8;
+}
+.scroll-list .date{
+    display: inline-block;
+    width: 13%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+.scroll-list .category {
+    display: inline-block;
+    width: 12%;
+    border-radius: 5px;
+    background-color: indianred;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.0rem;
+    line-height: 16px;
+}
+.scroll-list .title {
+    display: inline-block;
+    width: 75%;
+    padding-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    font-size:1.2rem;
 }
