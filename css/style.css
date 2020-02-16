@@ -46,7 +46,7 @@ a:active {
 .header {
   width: 100%;
   padding: 28px 0 15px;
-  background: url("../images/bg-gray.png");
+  background: whitesmoke url("../images/bg-gray.png");
   box-shadow: 0 0 9px 2px #eeeeeae8;
 }
 .wrapper {
