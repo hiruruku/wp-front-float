@@ -279,3 +279,33 @@ a:active {
   left: 0;
   width: 100%;
 }
+/* Sideメニュー　Categories 以下 */
+.blogs {
+  margin: 10px 10px 30px;
+}
+.blogs,
+.blogs ul {
+  list-style-type: none;
+}
+.blogs > li .title {
+  margin:15px 0;
+  padding-left: 9px;
+  border-left:5px solid crimson;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+/* １層目以降の2番目以降のli */
+.blogs > li + li {
+  margin-top: 25px;
+}
+.blogs > li ul {
+  margin:15px;
+}
+.blogs > li ul > li {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  background: url('../images/arrow.gif') no-repeat left center;
+}
+.blogs a:hover {
+  text-decoration: underline;
+}
